@@ -18,6 +18,8 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	compileOnly("org.springframework.boot:spring-boot-devtools")
 	implementation group: 'org.jsoup', name: 'jsoup', version: '1.13.1'
+	implementation group: 'org.json', name: 'json', version: '20190722'
+	implementation group: 'org.apache.clerezza.ext', name: 'org.json.simple', version: '0.3-incubating'
 }
 
 test {
