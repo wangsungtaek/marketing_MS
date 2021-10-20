@@ -24,7 +24,7 @@ public class LoginApp {
 
     public static void main(String[] args) throws IOException {
 
-        String url ="https://www.instagram.com/thesy88/";  //인스타그램 url
+        String url ="https://www.instagram.com/dlwlrma/";  //인스타그램 url
         String userAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36";
         System.setProperty("sun.net.http.allowRestrictedHeaders", "false");
 //        String url = "https://www.instagram.com/p/CFS-pm3j3JK/";
@@ -36,14 +36,14 @@ public class LoginApp {
             Document doc = nvDocument.parse();
 
             Elements datas = doc.select("script");
+            System.out.println("datas" + datas);
 
             for (Element data : datas) {
-                System.out.println(data);
                 for (DataNode node : data.dataNodes()) {
                     if (node.getWholeData().contains("window._sharedData =")) {
 
                         String nodeData = node.getWholeData();
-
+                        System.out.println("nodeData : " + nodeData);
                         nodeData = nodeData.replace("window._sharedData = ", "");
                         nodeData = nodeData.replace(nodeData.substring(nodeData.length() - 1), "");
 
