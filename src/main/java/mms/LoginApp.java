@@ -38,8 +38,12 @@ public class LoginApp {
             Elements datas = doc.select("script");
             System.out.println("datas" + datas);
 
+            int i = 0;
             for (Element data : datas) {
+                System.out.println("loop Test : " + ++i);
+                System.out.println(data);
                 for (DataNode node : data.dataNodes()) {
+                    System.out.println("node : " + node);
                     if (node.getWholeData().contains("window._sharedData =")) {
 
                         String nodeData = node.getWholeData();
