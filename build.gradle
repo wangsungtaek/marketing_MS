@@ -20,6 +20,7 @@ dependencies {
 	implementation group: 'org.jsoup', name: 'jsoup', version: '1.13.1'
 	implementation group: 'org.json', name: 'json', version: '20190722'
 	implementation group: 'org.apache.clerezza.ext', name: 'org.json.simple', version: '0.3-incubating'
+	implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
 }
 
 test {
