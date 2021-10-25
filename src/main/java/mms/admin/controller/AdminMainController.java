@@ -12,4 +12,9 @@ public class AdminMainController {
     public String dashboardPage() {
         return "index";
     }
+
+    @GetMapping("reviewer")
+    public String reviewerPage() {
+        return "reviewer/index";
+    }
 }
