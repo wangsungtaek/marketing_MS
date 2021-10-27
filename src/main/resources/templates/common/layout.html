@@ -11,41 +11,40 @@
 </head>
 
 <body>
-<header th:replace="common/header :: header"></header>
     <!-- Page Wrapper -->
-<!--    <div id="wrapper">-->
+    <div id="wrapper">
 
-<!--        &lt;!&ndash; 공통 Sidebar &ndash;&gt;-->
-<!--        <header th:replace="common/header :: header"></header>-->
+        <!-- 공통 Sidebar -->
+        <header th:replace="common/sidebar :: sidebar"></header>
 
-<!--        &lt;!&ndash; Content Wrapper &ndash;&gt;-->
-<!--        <div id="content-wrapper" class="d-flex flex-column">-->
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
 
-<!--            <div id="content">-->
+            <div id="content">
 
-<!--                &lt;!&ndash; 공통 header &ndash;&gt;-->
+                <!-- 공통 header -->
 <!--                <header th:replace="common/header :: header"></header>-->
 
-<!--                &lt;!&ndash; page content body 구성 &ndash;&gt;-->
-<!--                <div class="container-fluid">-->
-<!--                    <th:block layout:fragment="content"></th:block>-->
-<!--                </div>-->
+                <!-- page content body 구성 -->
+                <div class="container-fluid">
+                    <th:block layout:fragment="content"></th:block>
+                </div>
 
-<!--                &lt;!&ndash; 공통 footer &ndash;&gt;-->
-<!--                <footer th:replace="common/footer :: footer"></footer>-->
+                <!-- 공통 footer -->
+                <footer th:replace="common/footer :: footer"></footer>
 
-<!--            </div>-->
+            </div>
 
-<!--        </div>-->
+        </div>
 
-<!--    </div>-->
+    </div>
 
     <!-- other -->
-    <th:block th:replace="common/other"></th:block>
+<!--    <th:block th:replace="common/other"></th:block>-->
 
     <!-- 공통 javascript -->
     <th:block th:replace="common/js"></th:block>
-    <th:block layout:fragment="js"></th:block>
+<!--    <th:block layout:fragment="js"></th:block>-->
 
 </body>
 
