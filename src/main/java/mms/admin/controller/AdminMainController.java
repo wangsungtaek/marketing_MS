@@ -10,7 +10,7 @@ public class AdminMainController {
 
     @GetMapping("")
     public String dashboardPage() {
-        return "index";
+        return "dashboard";
     }
 
     @GetMapping("reviewer")
