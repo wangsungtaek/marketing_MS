@@ -164,11 +164,43 @@
 
     </div>
 
-</th:block>
+    <!-- Content Row -->
+    <div class="row">
+        <div class="col-xl-6 col-lg-6">
+            <!-- Bar Chart -->
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">프로젝트 현황</h6>
+                </div>
+                <div class="card-body">
+                    <div class="chart-bar">
+                        <canvas id="projectChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="col-xl-6 col-lg-6">
+            <!-- Bar Chart -->
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">리뷰어 현황</h6>
+                </div>
+                <div class="card-body">
+                    <div class="chart-bar">
+                        <canvas id="reviewerChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</th:block>
 
 <!--    <script th:src="@{/assets/js/main.js}"></script>-->
 
-
+        <th:block layout:fragment="js">
+            <script th:src="@{/js/demo/chart-bar-demo.js}"></script>
+        </th:block>
 </body>
 </html>
